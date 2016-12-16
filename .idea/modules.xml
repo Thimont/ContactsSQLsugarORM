@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ContactsSQLbis.iml" filepath="$PROJECT_DIR$/ContactsSQLbis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContactsSQLsugarORM.iml" filepath="$PROJECT_DIR$/ContactsSQLsugarORM.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

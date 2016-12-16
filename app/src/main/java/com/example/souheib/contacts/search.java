@@ -27,18 +27,6 @@ public class search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         myListView = (ListView) findViewById(R.id.myListView);
-        res=(TextView) findViewById(R.id.sTTel);
-        res.setText("");
-        /*myListView.setOnItemClickListener((new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(), modify.class);
-                TextView id = (TextView) view.findViewById(R.id.id_entry);
-                intent.putExtra("id", id.getText());
-                startActivity(intent);
-            }
-        }));*/
-        //Contacts = MainActivity.Contacts ; //associe la table contact d'ici a celui du mainActivity
     }
 
     public void chercher(View v) {
@@ -47,11 +35,6 @@ public class search extends AppCompatActivity {
             res=(TextView) findViewById(R.id.sTTel);
             EditText lname=(EditText) findViewById(R.id.slname);
             res.setVisibility(View.INVISIBLE);
-
-            /*Cursor c=Contacts.rawQuery("SELECT * FROM contacts where nom LIKE '%" +
-                                        lname.getText() +"%' or prenom LIKE '%"+
-                                        lname.getText() +"%'",null);
-            */
 
             List<Contact> c=Contact.find(Contact.class,"nom Like '%" +lname.getText().toString()+"%' or prenom Like '%"  +lname.getText().toString()+"%'");
 

@@ -1,6 +1,7 @@
 package com.example.souheib.contacts;
 
 import com.orm.SugarRecord;
+import com.orm.dsl.Table;
 
 /**
  * Created by fodoucou on 16/12/2016.
