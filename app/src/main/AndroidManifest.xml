@@ -3,13 +3,13 @@
     package="com.example.souheib.contacts">
 
     <application
+        android:name="com.orm.SugarApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name="com.orm.SugarApp"> //ajout pour l'ormSugar
-
+        android:theme="@style/AppTheme">
+        //ajout pour l'ormSugar
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,8 @@
             android:name=".add"
             android:label="@string/title_activity_add"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".search"></activity>
+        <activity android:name=".search" />
+        <activity android:name=".modify"></activity>
     </application>
 
 </manifest>
